@@ -1,14 +1,23 @@
 import React, {Component} from 'react'
 import {render} from 'react-dom'
 
-import Example from '../../src'
+import PromiseWaiting from '../../src'
 
 class Demo extends Component {
   render() {
     return <div>
       <h1>promise-waiting Demo</h1>
-      <Example/>
+      <PromiseWaiting >
+        <button onClick={this.handlOnClick.bind(this)}>Click Me</button>
+      </PromiseWaiting>
     </div>
+  }
+  handlOnClick(){ 
+     return new Promise((resolve)=>{
+       setTimeout(() => {
+         resolve();
+       }, 2000);
+     })
   }
 }
 
