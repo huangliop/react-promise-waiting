@@ -1,6 +1,9 @@
 import React, {useState} from 'react'
 
 export default function PromiseWaiting(props) {
+  if(props.children.length){
+    throw new Error('Only one children is supported');
+  }
   const [doing,setDoing]=useState(props.children.props.disabled);
   const childClick=props.children.props.onClick;
   function onClick(el) {

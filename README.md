@@ -12,6 +12,9 @@
 This component prevents children's click events from being triggered continuously.This uses Promise . So children's click event must return a Promise.
 
 
+When the button is clicked, the button's disabled is set to true. Only the Promise function returns and then disabled to false.
+
+
 ## Install
 
 
@@ -20,6 +23,7 @@ This component prevents children's click events from being triggered continuousl
 
 ## Usage
 
+*Only one children is supported*
 
 ```import React, {Component} from 'react'
 import {render} from 'react-dom'

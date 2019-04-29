@@ -9,6 +9,8 @@
 这个组件主要是用于防止点击事件被触发多次。它主要利用Promise，所以onClick的监听函数必须返回一个Promise对象。
 
 
+当按钮被点击后，会设置按钮的disabled为true，只有Promise函数返回后再设置disabled为false
+
 ## Install
 
 
@@ -17,6 +19,7 @@
 
 ## Usage
 
+*只支持一个Children节点*
 
 ```import React, {Component} from 'react'
 import {render} from 'react-dom'
