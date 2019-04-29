@@ -5,6 +5,8 @@
 [![Coveralls][coveralls-badge]][coveralls]
 
 [Demo](https://huangliop.github.io/promise-waiting/)
+
+
 [中文文档](./README.cn.md)
 
 This component prevents children's click events from being triggered continuously.This uses Promise . So children's click event must return a Promise.
