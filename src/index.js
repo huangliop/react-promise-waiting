@@ -10,13 +10,13 @@ export default function PromiseWaiting(props) {
       return result;
     })
   }
-  const {children,receiveProps}=props;
+  const {children,receiveState}=props;
   const newProps={
     ...props.children.props,
     disabled:doing,
     onClick:onClick
   };
-  receiveProps&&(newProps[receiveProps]=doing);
+  receiveState&&(newProps[receiveState]=doing);
   return (
     <React.Fragment>
       {React.cloneElement(children,newProps)}

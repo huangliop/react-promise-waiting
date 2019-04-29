@@ -4,9 +4,7 @@
 [![npm package][npm-badge]][npm]
 [![Coveralls][coveralls-badge]][coveralls]
 
-[中文文档](./README.cn.md)
-
-This component prevents children's click events from being triggered continuously.This uses Promise . So children's click event must return a Promise.
+这个组件主要是用于方式点击事件被触发多次。它主要利用Promise，所以onClick的监听函数必须返回一个Promise对象。
 
 
 ## Install
@@ -51,7 +49,7 @@ render(<Demo/>, document.querySelector('#demo'))
 
 ## Props
 
-`receiveState` : past a true/false to children's props .This feature is used for those stateful button components,like this [Button Component](https://ice.work/component/button) has a loading state.
+`receiveState` : 子组件用于接收状态的props名称。这个特性主要是为了实现某些组件有自己的loading状态的功能，比如下面这个组件[Button Component](https://ice.work/component/button) 就有一个loading状态。
 
 for example
 ```
@@ -59,7 +57,7 @@ for example
     <Button  onClick={this.handlOnClick.bind(this)}>Click Me</Button>
 </PromiseWaiting>
 ```
-The Button component can receive a props,like this `<Button loading={true/flase} ...props />`
+上面的代码中，在运行时Button会收到一个多余的prop，比如这样 `<Button loading={true/flase} ...props />`
 
 [npm-badge]: https://img.shields.io/npm/v/npm-package.png?style=flat-square
 [npm]: https://www.npmjs.com/package/promise-waiting
