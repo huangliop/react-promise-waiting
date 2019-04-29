@@ -4,6 +4,8 @@
 [![npm package][npm-badge]][npm]
 [![Coveralls][coveralls-badge]][coveralls]
 
+[Demo](https://huangliop.github.io/promise-waiting/)
+
 这个组件主要是用于防止点击事件被触发多次。它主要利用Promise，所以onClick的监听函数必须返回一个Promise对象。
 
 
