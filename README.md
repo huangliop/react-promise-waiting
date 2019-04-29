@@ -7,7 +7,7 @@
 [Demo](https://huangliop.github.io/promise-waiting/)
 
 
-[中文文档](./README.cn.md)
+[中文文档](https://github.com/huangliop/promise-waiting/blob/master/README.cn.md)
 
 This component prevents children's click events from being triggered continuously.This uses Promise . So children's click event must return a Promise.
 
