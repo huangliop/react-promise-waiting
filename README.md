@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/huangliop/promise-waiting.svg?branch=master)](https://travis-ci.org/huangliop/promise-waiting)
 [![npm package][npm-badge]][npm]
-[![Coveralls][coveralls-badge]][coveralls]
+
 
 [Demo](https://huangliop.github.io/promise-waiting/)
 
@@ -68,8 +68,6 @@ for example
 ```
 The Button component can receive a props,like this `<Button loading={true/flase} ...props />`
 
-[npm-badge]: https://img.shields.io/npm/v/npm-package.png?style=flat-square
+[npm-badge]: https://img.shields.io/npm/v/promise-waiting.png?style=flat-square
 [npm]: https://www.npmjs.com/package/promise-waiting
 
-[coveralls-badge]: https://img.shields.io/coveralls/user/repo/master.png?style=flat-square
-[coveralls]: https://coveralls.io/github/user/repo
