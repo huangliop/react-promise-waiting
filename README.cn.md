@@ -1,6 +1,6 @@
 # promise-waiting
 
-[![Build Status](https://travis-ci.org/huangliop/promise-waiting.svg?branch=master)](https://travis-ci.org/huangliop/promise-waiting)
+[![Build Status](https://travis-ci.org/huangliop/react-promise-waiting.svg?branch=master)](https://travis-ci.org/huangliop/react-promise-waiting)
 [![npm package][npm-badge]][npm]
 
 
