@@ -25,7 +25,8 @@ When the button is clicked, the button's disabled is set to true. Only the Promi
 
 *Only one children is supported*
 
-```import React, {Component} from 'react'
+```js
+import React, {Component} from 'react'
 import {render} from 'react-dom'
 
 import PromiseWaiting from 'promise-waiting'
@@ -61,7 +62,7 @@ render(<Demo/>, document.querySelector('#demo'))
 `receiveState` : past a true/false to children's props .This feature is used for those stateful button components,like this [Button Component](https://ice.work/component/button) has a loading state.
 
 for example
-```
+```js
 <PromiseWaiting receiveState='loading'>
     <Button  onClick={this.handlOnClick.bind(this)}>Click Me</Button>
 </PromiseWaiting>
