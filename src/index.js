@@ -4,7 +4,7 @@ export default function PromiseWaiting(props) {
   if(props.children.length){
     throw new Error('Only one children is supported');
   }
-  const [doing,setDoing]=useState(props.children.props.disabled);
+  const [doing,setDoing]=useState(false);
   const childClick=props.children.props.onClick;
   function onClick(el) {
     setDoing(true);
@@ -16,7 +16,7 @@ export default function PromiseWaiting(props) {
   const {children,receiveState}=props;
   const newProps={
     ...props.children.props,
-    disabled:doing,
+    disabled:props.children.props.disabled||doing,
     onClick:onClick
   };
   receiveState&&(newProps[receiveState]=doing);
